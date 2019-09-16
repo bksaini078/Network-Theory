@@ -1,4 +1,4 @@
-disp("******************QUESTION 1****************************");
+disp("**********************************************");
 A=load_sparse("filename","Un");
 #calculating degrees/friends of each user.
 degrees=(sum(A));%computing number of friends.
@@ -18,11 +18,10 @@ avgfoaf= sum(f_u)/sum(degrees);
 #calculating average friend of a friends
 avg_foaf= compute_avg_friends(degrees,A);
 #computing difference 
-disp("******************QUESTION 1.3****************************");
+disp("**********************************************");
 compute_difference(degrees,avg_foaf);
-disp("******************QUESTION 1.4****************************");
+disp("**********************************************");
 compute_result(degrees,avg_foaf);# NOT CONFIRMED ABOUT THAT .
-disp("Here we have two values of average f friend of friend calculated in two different way.")
-disp("Please do let us know which one is correct ")
+
 disp(full(avgfoaf));
 
